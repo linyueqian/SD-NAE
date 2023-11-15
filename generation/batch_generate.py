@@ -703,15 +703,12 @@ def main(args):
                     f"Step [{step:02d}]: loss - {loss.item():.4f}, ce - {ce_loss.item():.4f}, "
                     f"prob_target - {probs[0, label_id].item():.4f}, prob_max - {max_prob.item():.4f}, pred_class - {max_class.item()},  pred_class_name - {all_class_labels[max_class.item()]}"
                 )
-            # logging and saving
             # Check if all arrays in all_metrics have the same length
             lengths = [len(v) for v in all_metrics.values()]
             if len(set(lengths)) != 1:
                 print("Not all arrays are of the same length.")
-                # Optionally, print the lengths to see which ones are different
                 for k, v in all_metrics.items():
                     print(f"{k}: Length is {len(v)}")
-                # You would then need to decide how to handle the differing lengths.
 
             all_metrics = pd.DataFrame(all_metrics)
             all_metrics.to_csv(
