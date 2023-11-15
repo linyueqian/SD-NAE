@@ -1,0 +1,20 @@
+# general
+*~
+*.pyc
+\#*\#
+.\#*
+*DS_Store
+out.txt
+espnet.egg-info/
+doc/_build
+slurm-*.out
+tmp*
+.eggs/
+.hypothesis/
+.idea
+.pytest_cache/
+__pycache__/
+.vscode*
+*.vim
+*.swp
+*.nfs*
