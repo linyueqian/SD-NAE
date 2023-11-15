@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Regular.ttf');
+}
+
+body {
+    background-image: url("../img/overview.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.banner {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.banner-text {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    color:#ECE9E6;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.banner-btn{
+    margin-top: 30px;
+    padding: 10px 20px;
+    color: #ECE9E6;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+}
+
+.banner-btn:hover {
+    background-color: #fff;
+    color: #005B4A;
+    transition: .5s;
+}
+
+.banner h1{
+    font-size: 50px;
+}
+
+.banner h5{
+    font-size: 18px;
+}
