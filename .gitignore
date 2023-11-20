@@ -18,3 +18,10 @@ __pycache__/
 *.vim
 *.swp
 *.nfs*
+*outliers
+*logs
+*latents
+*images
+*.sh
+*.ipynb
+local
