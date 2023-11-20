@@ -7,7 +7,7 @@ Yuqian Lin*, Jingyang Zhang*, Yiran Chen, Hai Li
 Natural Adversarial Examples (NAEs) are samples that naturally arise from the environment (rather than artifically created via pixel perturbation) yet fools the classifier into misclassification. NAEs are valuable for identifying the vulnerability and robustly measuring the performance of a classifier.
 
 
-Early works collect NAEs by filtering from a huge set of real images. We argue that this is passive and relies on the assumption that NAEs exist in the candidate set in the first place. In this work, we propose to synthesize NAEs using the powerful Stable Diffusion.
+Early works collect NAEs by filtering from a huge set of real images. We argue that this is passive and relies on the assumption that NAEs exist in the candidate set in the first place. **In this work, we propose to synthesize NAEs using the powerful Stable Diffusion**.
 
 See below the overview and generated examples by SD-NAE. For more details, please refer to our paper!
 
