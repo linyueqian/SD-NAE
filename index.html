@@ -87,7 +87,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title" style="width: 100vw;">SD-NAE: Generating Natural Adversarial Examples with Stable Diffusion</h1>
+            <h1 class="title is-1 publication-title" style="width: 100vw;">Generating Natural Adversarial Examples with Stable Diffusion</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
               <a href="https://yueqianlin.com">Yueqian Lin</a><sup>1*</sup>,</span>
@@ -194,7 +194,14 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Placeholder
+              Robustly evaluating deep learning image classifiers is challenging due to the limitations of standard datasets.
+              Natural Adversarial Examples (NAEs), arising naturally from the environment and capable of deceiving classifiers, are instrumental in identifying vulnerabilities in trained models.
+              Existing works collect such NAEs by filtering from a huge set of real images,  a process that is passive and lacks control.
+              In this work, we propose to actively synthesize NAEs with the state-of-the-art Stable Diffusion.
+              Specifically, our method formulates a controlled optimization process, where we perturb the token embedding that corresponds to a specified class to synthesize NAEs.
+              The generation is guided by the gradient of loss from the target classifier so that the created image closely mimics the ground-truth class yet deceives the classifier.
+              Named SD-NAE (Stable Diffusion for Natural Adversarial Examples), our innovative method is effective in producing valid and useful NAEs, which is demonstrated through a meticulously designed experiment.
+              Our work thereby provides a valuable method for obtaining challenging evaluation data, which in turn can potentially advance the development of more robust deep learning models.
             </p>
           </div>
           </div>
@@ -203,7 +210,15 @@
           <div class= "column">
             <h2 class="title is-3">Overview</h2>
             <div class="content has-text-justified">
-                <img src="./img/overview.png" alt="Overview" style="width: 100%;"/>
+              <p>
+              Natural Adversarial Examples (NAEs) are samples that naturally arise from the environment (rather than artifically created via pixel perturbation) yet fools the classifier into misclassification. NAEs are valuable for identifying the vulnerability and robustly measuring the performance of a classifier.
+              </p>
+              <p>
+              Early works collect NAEs by filtering from a huge set of real images. We argue that this is passive and relies on the assumption that NAEs exist in the candidate set in the first place. <strong> In this work, we propose to synthesize NAEs using the powerful Stable Diffusion.</strong>
+            </p>
+            <p>
+              See below the method and generated examples by SD-NAE. For more details, please refer to our paper!
+            </p>
             </div>
             </div>
             </div>
@@ -219,9 +234,8 @@
         <div class= "column">
           <h2 class="title is-3">Method</h2>
           <div class="content has-text-justified">
-            <p>
-              Placeholder Placeholder Placeholder Placeholder 
-            </p>
+            <img src="./static/img/method.png" alt="Method" style="width: 100%;"/>
+            <i>Overview of SD-NAE, which generates natural adversarial examples by optimizing the token embedding of the class-related token. The optimization is guided by the gradient of loss backpropagated from the target classifier</i>  
           </div>
         </div>
       </div>
@@ -229,9 +243,9 @@
         <div class= "column">
           <h2 class="title is-3">Result</h2>
           <div class="content has-text-justified">
-            <p>
-              Placeholder Placeholder Placeholder Placeholder 
-            </p>
+            <img src="./static/img/main.png" alt="Result" style="width: 100%;"/>
+              <i>In each pair, the left one is generated with the initialized token embedding. Importantly, we make sure that all left images are correctly classified by the ImageNet ResNet-50 model in the first place. The right ones are the result of SD-NAE optimization when using the corresponding left one as initialization, and we mark the classifier's prediction in red above the image.</i>
+
           </div>
         </div>
       </div>
