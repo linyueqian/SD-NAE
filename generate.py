@@ -1,24 +1,24 @@
 import argparse
-from copy import deepcopy
 import json
 import os
 import sys
+from copy import deepcopy
+
 sys.path.append("..")
 
 import numpy as np
 import pandas as pd
-from tqdm import tqdm
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from diffusers import DDIMScheduler, StableDiffusionPipeline
 from torchvision import transforms as trn
 from torchvision.transforms.functional import to_pil_image
-
-from diffusers import DDIMScheduler, StableDiffusionPipeline
+from tqdm import tqdm
 from transformers import ResNetForImageClassification
 
 from class_names import in_selected_classes
+
 with open('in100_class_index.json', 'r') as f:
     in100_class_index = json.load(f)
 
