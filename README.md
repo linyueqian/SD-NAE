@@ -2,7 +2,7 @@
 
 This repo contains the code for the paper [Generating Natural Adversarial Examples with Stable Diffusion]().
 
-Authors: Yuqian Lin*, Jingyang Zhang*, Yiran Chen, Hai Li
+Anonymous authors
 
 ---
 
