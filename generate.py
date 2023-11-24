@@ -65,7 +65,7 @@ def forward_diffusion(
 ):
     self.scheduler.set_timesteps(num_inference_steps)
     timesteps_tensor = self.scheduler.timesteps.to(self.device)
-    extra_step_kwargs = self.prepare_extra_step_kwargs(self, eta)
+    extra_step_kwargs = self.prepare_extra_step_kwargs(None, eta)
 
     for i, t in tqdm(
         enumerate(timesteps_tensor),
