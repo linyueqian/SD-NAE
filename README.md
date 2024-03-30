@@ -26,3 +26,18 @@ Use `generate.py` to synthesize natural adversarial examples yourself!
 # All default hyperparameters (encoded in generate.py) are used
 python generate.py --class_ids 20 20
 ```
+
+## Citation
+
+If you find this work useful, please consider citing:
+
+```bibtex
+@inproceedings{
+    lin2024sdnae,
+    title={{SD}-{NAE}: Generating Natural Adversarial Examples with Stable Diffusion},
+    author={Yueqian Lin and Jingyang Zhang and Yiran Chen and Hai Li},
+    booktitle={The Second Tiny Papers Track at ICLR 2024},
+    year={2024},
+    url={https://openreview.net/forum?id=D87rimdkGd}
+    }
+```
