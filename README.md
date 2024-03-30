@@ -1,8 +1,8 @@
 # SD-NAE
 
-This repo contains the code for the paper [Generating Natural Adversarial Examples with Stable Diffusion]().
+This repo contains the code for the paper [Generating Natural Adversarial Examples with Stable Diffusion](https://openreview.net/forum?id=D87rimdkGd).
 
-Anonymous authors
+Authors: Yueqian Lin*, Jingyang Zhang*, Yiran Chen, Hai Li
 
 ---
 
